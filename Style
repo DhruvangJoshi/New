@@ -104,15 +104,7 @@ ul,ol         { list-style:none; }
 
 .header-container { }
 .nav-container1{ display:none; }
-.nav-container {
-    background: url("../images/manu_bg.png") repeat scroll center center rgba(0, 0, 0, 0);
-    height: 45px;
-}
-
-#cstm-nav {
-    background: url("../images/manu_line_bg.png") repeat-x scroll center center rgba(0, 0, 0, 0);
-    padding: 10px 0;margin-bottom: 10px;
-}
+.nav-container { margin-bottom: 10px; }
 .main-container { }
 .header-container,.nav-container,.main-container,.footer-container{}
 
@@ -867,10 +859,10 @@ tr.summary-details-excluded { font-style:italic; }
 /********** < Navigation */
 .nav-inner
 {
-/*	background: url("../images/manu_line_bg.png") repeat-x scroll center center transparent;
-*/	clear: both;
+	background: url("../images/manu_line_bg.png") repeat-x scroll center center transparent;
+	clear: both;
     height: 45px;
-    padding:0;
+    padding: 10px 0;
 }
 
 .advanced_nav{ display:none; }
@@ -1542,49 +1534,18 @@ a.product-image { display:block;  margin:0 0 10px; }
 
 /* Add to Links */
 .add-to-links { margin:5px 0 0; font-size:12px;  }
-.add-to-links li{ list-style:none; line-height:20px;display: inline;}
+.add-to-links li{ list-style:none; line-height:20px;}
 .add-to-links .separator { display:none; }
-
-.catalog-category-view .product-block .hover_block .actions {
-    margin-top: 85px;
-}
-.catalog-category-view .product-block .hover_block .actions ul.add-to-links li { margin: 0 4px;}
-
-.catalog-category-view .add-to-links span {
-    background: url("../images/cart.png") no-repeat scroll center center #FF6D6D !important;
-    border-radius: 28px !important;
-    height: auto;
-    padding: 21px !important;
-    width: auto;
-	border:4px solid transparent;
-	transition:border 1s;
-}
-.catalog-category-view .add-to-links button.button span {border:4px solid transparent;}
-
-.catalog-category-view .add-to-links button.button:hover span {border:4px solid #fff !important;}
-.catalog-category-view .add-to-links button.btn-cart-new {margin:0px !important;}
-.catalog-category-view .product-block .hover_block .actions ul.add-to-links {background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: 3px solid rgba(0, 0, 0, 0);
-    display: inline-block;}
-
-.catalog-category-view .product-block .hover_block .actions ul.add-to-links li a.link-wishlist
+.add-to-links li a.link-wishlist
 { 
-	 background:url("../images/wishlist.png") no-repeat scroll center center #C1D774;
-    border-radius: 28px;
-    padding: 13px 21px;
-	border:4px solid transparent;
-	transition:border 1s;
+	background:url(../images/compare_wishlist.png) no-repeat left 2px;
+	padding-left:22px; 
 }
-.catalog-category-view .product-block .hover_block .actions ul.add-to-links li a.link-wishlist:hover{border:4px solid #fff;}
-.catalog-category-view .product-block .hover_block .actions ul.add-to-links li a.link-compare {
-    background: url("../images/compare.png") no-repeat scroll center center #F9A048;
-    border-radius: 28px;
-    padding:13px 21px;
-	border:4px solid transparent;
-	transition:border 1s;
+.add-to-links li a.link-compare
+{ 
+	background:url(../images/compare_wishlist.png) no-repeat left -41px;
+	padding-left:22px;
 }
-.catalog-category-view .product-block .hover_block .actions ul.add-to-links li a.link-compare:hover {border:4px solid #fff;}
-
 .add-to-links li a.link-wishlist:hover	{ background-position:left -18px; text-decoration:underline;}
 .add-to-links li a.link-compare:hover	{ background-position:left -61px;text-decoration:underline;}
 /* Add to Cart */
@@ -2853,24 +2814,21 @@ text-shadow:none; font-family:Ubuntu,Arial,Verdana;}
 #featured-carousel .hover_block	,
 #grid .product-block .hover_block	
 { 
-  background: url("../images/test.png") repeat scroll center center rgba(0, 0, 0, 0);
+	background: none repeat scroll 0 0 #E8E8E4;
     border-radius: 5px;
-    display: none;
-    height: 250px;
-    left: 0 !important;
+    left: 50px;
     margin: 0 auto;
-    padding: 0;
+    padding: 10px 0;
     position: absolute;
-    top: 0;
-    width: 213px;
-	 transition: background 1s;
+    top: 115px;
+    width: 150px;	
+	display:none;
 }
-
 .crosssell li:hover .hover_block,
 #featured-carousel li:hover .hover_block,
 #grid li:hover .hover_block	,
 #upsell-carousel .hover_block		
-{ display:block;  transition: background 1s;}
+{ display:block;}
 
 .hover_block .button.button { margin:5px 0 2px;}
 
